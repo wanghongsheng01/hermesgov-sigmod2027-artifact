@@ -1,0 +1,142 @@
+{
+  "benchmark": "Public TPC-DS Layered Star-Schema (OneData DWD/DIM/DWS/ADS)",
+  "seed": 42,
+  "catalog_scale_tables": 36,
+  "planning_latency_us": {
+    "ADS_Direct_Reuse": {
+      "runs": 1000,
+      "p50_us": 4.04,
+      "p95_us": 4.12,
+      "p99_us": 4.29,
+      "mean_us": 4.05
+    },
+    "DWS_Plus_DIM_3Hop": {
+      "runs": 1000,
+      "p50_us": 8.17,
+      "p95_us": 9.46,
+      "p99_us": 12.42,
+      "mean_us": 8.42
+    },
+    "Hybrid_Derivative_Ratio": {
+      "runs": 1000,
+      "p50_us": 15.5,
+      "p95_us": 17.12,
+      "p99_us": 20.04,
+      "mean_us": 15.81
+    }
+  },
+  "fault_injection_ablation": {
+    "Full_HermesGov": {
+      "blocked": 180,
+      "total": 180,
+      "pct": 100.0,
+      "by_class": {
+        "NonAdditiveRollup": 30,
+        "PopulationMismatch": 30,
+        "StaleVersionDrift": 30,
+        "CurrencyViolation": 30,
+        "UnsafeJoinPath": 30,
+        "LayerOrCoverageViolation": 30
+      }
+    },
+    "No_NonAdditiveGuard": {
+      "blocked": 150,
+      "total": 180,
+      "pct": 83.3,
+      "by_class": {
+        "NonAdditiveRollup": 0,
+        "PopulationMismatch": 30,
+        "StaleVersionDrift": 30,
+        "CurrencyViolation": 30,
+        "UnsafeJoinPath": 30,
+        "LayerOrCoverageViolation": 30
+      }
+    },
+    "No_PopulationGate": {
+      "blocked": 150,
+      "total": 180,
+      "pct": 83.3,
+      "by_class": {
+        "NonAdditiveRollup": 30,
+        "PopulationMismatch": 0,
+        "StaleVersionDrift": 30,
+        "CurrencyViolation": 30,
+        "UnsafeJoinPath": 30,
+        "LayerOrCoverageViolation": 30
+      }
+    },
+    "No_VersionFence": {
+      "blocked": 150,
+      "total": 180,
+      "pct": 83.3,
+      "by_class": {
+        "NonAdditiveRollup": 30,
+        "PopulationMismatch": 30,
+        "StaleVersionDrift": 0,
+        "CurrencyViolation": 30,
+        "UnsafeJoinPath": 30,
+        "LayerOrCoverageViolation": 30
+      }
+    },
+    "No_CurrencyGuard": {
+      "blocked": 150,
+      "total": 180,
+      "pct": 83.3,
+      "by_class": {
+        "NonAdditiveRollup": 30,
+        "PopulationMismatch": 30,
+        "StaleVersionDrift": 30,
+        "CurrencyViolation": 0,
+        "UnsafeJoinPath": 30,
+        "LayerOrCoverageViolation": 30
+      }
+    },
+    "No_JoinGuard": {
+      "blocked": 150,
+      "total": 180,
+      "pct": 83.3,
+      "by_class": {
+        "NonAdditiveRollup": 30,
+        "PopulationMismatch": 30,
+        "StaleVersionDrift": 30,
+        "CurrencyViolation": 30,
+        "UnsafeJoinPath": 0,
+        "LayerOrCoverageViolation": 30
+      }
+    },
+    "No_LayerOrCoverage": {
+      "blocked": 150,
+      "total": 180,
+      "pct": 83.3,
+      "by_class": {
+        "NonAdditiveRollup": 30,
+        "PopulationMismatch": 30,
+        "StaleVersionDrift": 30,
+        "CurrencyViolation": 30,
+        "UnsafeJoinPath": 30,
+        "LayerOrCoverageViolation": 0
+      }
+    },
+    "Ungoverned_Baseline": {
+      "blocked": 0,
+      "total": 180,
+      "pct": 0.0,
+      "by_class": {
+        "NonAdditiveRollup": 0,
+        "PopulationMismatch": 0,
+        "StaleVersionDrift": 0,
+        "CurrencyViolation": 0,
+        "UnsafeJoinPath": 0,
+        "LayerOrCoverageViolation": 0
+      }
+    }
+  },
+  "sql_guard_eval": {
+    "total_cases": 40,
+    "accuracy_pct": 100.0,
+    "adversarial_blocked": "30/30",
+    "false_positives": 0,
+    "p50_us": 6.42,
+    "p95_us": 13.04
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "seed": 42,
+  "catalog_scale_tables": 105,
+  "planning_latency_us": {
+    "ADS_Direct_Reuse": {
+      "runs": 1000,
+      "p50_us": 3.17,
+      "p95_us": 3.29,
+      "p99_us": 4.12,
+      "mean_us": 3.23
+    },
+    "DWS_Plus_DIM_3Hop": {
+      "runs": 1000,
+      "p50_us": 13.33,
+      "p95_us": 14.08,
+      "p99_us": 18.75,
+      "mean_us": 13.21
+    },
+    "Hybrid_Derivative_Ratio": {
+      "runs": 1000,
+      "p50_us": 16.67,
+      "p95_us": 19.25,
+      "p99_us": 24.71,
+      "mean_us": 17.36
+    }
+  },
+  "fault_injection_ablation": {
+    "Full_HermesGov": {
+      "blocked": 180,
+      "total": 180,
+      "interception_rate_pct": 100.0,
+      "by_class": {
+        "NonAdditiveRollup": "30/30",
+        "PopulationMismatch": "30/30",
+        "StaleVersionDrift": "30/30",
+        "CurrencyViolation": "30/30",
+        "UnsafeJoinPath": "30/30",
+        "LayerOrCoverageViolation": "30/30"
+      }
+    },
+    "No_NonAdditiveGuard": {
+      "blocked": 150,
+      "total": 180,
+      "interception_rate_pct": 83.33,
+      "by_class": {
+        "NonAdditiveRollup": "0/30",
+        "PopulationMismatch": "30/30",
+        "StaleVersionDrift": "30/30",
+        "CurrencyViolation": "30/30",
+        "UnsafeJoinPath": "30/30",
+        "LayerOrCoverageViolation": "30/30"
+      }
+    },
+    "No_PopulationGate": {
+      "blocked": 150,
+      "total": 180,
+      "interception_rate_pct": 83.33,
+      "by_class": {
+        "NonAdditiveRollup": "30/30",
+        "PopulationMismatch": "0/30",
+        "StaleVersionDrift": "30/30",
+        "CurrencyViolation": "30/30",
+        "UnsafeJoinPath": "30/30",
+        "LayerOrCoverageViolation": "30/30"
+      }
+    },
+    "No_VersionFence": {
+      "blocked": 150,
+      "total": 180,
+      "interception_rate_pct": 83.33,
+      "by_class": {
+        "NonAdditiveRollup": "30/30",
+        "PopulationMismatch": "30/30",
+        "StaleVersionDrift": "0/30",
+        "CurrencyViolation": "30/30",
+        "UnsafeJoinPath": "30/30",
+        "LayerOrCoverageViolation": "30/30"
+      }
+    },
+    "No_CurrencyGuard": {
+      "blocked": 150,
+      "total": 180,
+      "interception_rate_pct": 83.33,
+      "by_class": {
+        "NonAdditiveRollup": "30/30",
+        "PopulationMismatch": "30/30",
+        "StaleVersionDrift": "30/30",
+        "CurrencyViolation": "0/30",
+        "UnsafeJoinPath": "30/30",
+        "LayerOrCoverageViolation": "30/30"
+      }
+    },
+    "No_JoinGuard": {
+      "blocked": 150,
+      "total": 180,
+      "interception_rate_pct": 83.33,
+      "by_class": {
+        "NonAdditiveRollup": "30/30",
+        "PopulationMismatch": "30/30",
+        "StaleVersionDrift": "30/30",
+        "CurrencyViolation": "30/30",
+        "UnsafeJoinPath": "0/30",
+        "LayerOrCoverageViolation": "30/30"
+      }
+    },
+    "No_LayerOrCoverage": {
+      "blocked": 150,
+      "total": 180,
+      "interception_rate_pct": 83.33,
+      "by_class": {
+        "NonAdditiveRollup": "30/30",
+        "PopulationMismatch": "30/30",
+        "StaleVersionDrift": "30/30",
+        "CurrencyViolation": "30/30",
+        "UnsafeJoinPath": "30/30",
+        "LayerOrCoverageViolation": "0/30"
+      }
+    },
+    "Ungoverned_Baseline": {
+      "blocked": 0,
+      "total": 180,
+      "interception_rate_pct": 0.0,
+      "by_class": {
+        "NonAdditiveRollup": "0/30",
+        "PopulationMismatch": "0/30",
+        "StaleVersionDrift": "0/30",
+        "CurrencyViolation": "0/30",
+        "UnsafeJoinPath": "0/30",
+        "LayerOrCoverageViolation": "0/30"
+      }
+    }
+  },
+  "sql_guard_eval": {
+    "total_cases": 40,
+    "accuracy_pct": 100.0,
+    "adversarial_blocked": "30/30",
+    "false_positives": 0,
+    "p50_us": 3.21,
+    "p95_us": 8.29
+  }
+}
