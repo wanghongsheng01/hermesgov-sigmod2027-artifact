@@ -1,0 +1,250 @@
+{
+  "seed": 42,
+  "elapsed_seconds": 1.07,
+  "property_based_formal_verification_10k": {
+    "total_trials": 10000,
+    "terminated_within_bounds": 10000,
+    "certified_ok_count": 4824,
+    "diagnostic_quarantine_count": 920,
+    "clean_refusal_or_stale_count": 4256,
+    "uncertified_primary_leaks": 0,
+    "max_certified_rel_error": 0.0,
+    "ungoverned_silent_corruptions": 8232,
+    "regime_breakdown": {
+      "uncertified_pop_fallback": 1224,
+      "clean_ads_exact": 1768,
+      "cycle_or_deep_dag": 1016,
+      "clean_hybrid_ratio": 2215,
+      "join_trap_dws_or_ambig_or_scd2": 980,
+      "currency_or_stale_hash_trap": 956,
+      "grain_coarsening_ratio_trap": 1841
+    },
+    "max_recursion_depth_observed": 16,
+    "max_bfs_expansions_observed": 3,
+    "ungoverned_ratio_mean_rel_error_pct": 571.0,
+    "ungoverned_ratio_p95_rel_error_pct": 1199.57,
+    "ungoverned_ratio_max_rel_error_pct": 2333.17
+  },
+  "estate_scale_and_hit_ratio_sweep": {
+    "scales": [
+      36,
+      105,
+      500,
+      1599
+    ],
+    "hit_ratios": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "hermesgov_scoped": {
+      "36": {
+        "rho_0": {
+          "mean_us": 5.43,
+          "batch_p50_us": 5.38,
+          "p50_us": 5.42,
+          "p95_us": 5.75,
+          "p99_us": 7.25
+        },
+        "rho_25": {
+          "mean_us": 4.33,
+          "batch_p50_us": 4.33,
+          "p50_us": 5.17,
+          "p95_us": 5.75,
+          "p99_us": 7.12
+        },
+        "rho_50": {
+          "mean_us": 3.2,
+          "batch_p50_us": 3.21,
+          "p50_us": 4.88,
+          "p95_us": 5.79,
+          "p99_us": 6.38
+        },
+        "rho_75": {
+          "mean_us": 2.05,
+          "batch_p50_us": 2.05,
+          "p50_us": 0.83,
+          "p95_us": 5.83,
+          "p99_us": 6.0
+        },
+        "rho_100": {
+          "mean_us": 0.78,
+          "batch_p50_us": 0.78,
+          "p50_us": 0.75,
+          "p95_us": 0.83,
+          "p99_us": 1.04
+        }
+      },
+      "105": {
+        "rho_0": {
+          "mean_us": 5.46,
+          "batch_p50_us": 5.47,
+          "p50_us": 5.46,
+          "p95_us": 5.71,
+          "p99_us": 7.17
+        },
+        "rho_25": {
+          "mean_us": 4.27,
+          "batch_p50_us": 4.24,
+          "p50_us": 5.08,
+          "p95_us": 5.71,
+          "p99_us": 6.46
+        },
+        "rho_50": {
+          "mean_us": 3.21,
+          "batch_p50_us": 3.24,
+          "p50_us": 4.96,
+          "p95_us": 5.83,
+          "p99_us": 6.5
+        },
+        "rho_75": {
+          "mean_us": 2.06,
+          "batch_p50_us": 2.06,
+          "p50_us": 0.83,
+          "p95_us": 5.83,
+          "p99_us": 6.25
+        },
+        "rho_100": {
+          "mean_us": 0.83,
+          "batch_p50_us": 0.8,
+          "p50_us": 0.79,
+          "p95_us": 0.88,
+          "p99_us": 1.88
+        }
+      },
+      "500": {
+        "rho_0": {
+          "mean_us": 5.61,
+          "batch_p50_us": 5.56,
+          "p50_us": 5.58,
+          "p95_us": 5.83,
+          "p99_us": 7.17
+        },
+        "rho_25": {
+          "mean_us": 4.45,
+          "batch_p50_us": 4.42,
+          "p50_us": 5.54,
+          "p95_us": 5.79,
+          "p99_us": 7.21
+        },
+        "rho_50": {
+          "mean_us": 3.24,
+          "batch_p50_us": 3.23,
+          "p50_us": 4.92,
+          "p95_us": 5.79,
+          "p99_us": 7.0
+        },
+        "rho_75": {
+          "mean_us": 2.01,
+          "batch_p50_us": 2.02,
+          "p50_us": 0.83,
+          "p95_us": 5.79,
+          "p99_us": 7.12
+        },
+        "rho_100": {
+          "mean_us": 0.81,
+          "batch_p50_us": 0.79,
+          "p50_us": 0.79,
+          "p95_us": 0.83,
+          "p99_us": 1.0
+        }
+      },
+      "1599": {
+        "rho_0": {
+          "mean_us": 5.53,
+          "batch_p50_us": 5.53,
+          "p50_us": 5.54,
+          "p95_us": 5.83,
+          "p99_us": 7.08
+        },
+        "rho_25": {
+          "mean_us": 4.34,
+          "batch_p50_us": 4.36,
+          "p50_us": 5.46,
+          "p95_us": 5.75,
+          "p99_us": 5.96
+        },
+        "rho_50": {
+          "mean_us": 3.18,
+          "batch_p50_us": 3.18,
+          "p50_us": 4.88,
+          "p95_us": 5.75,
+          "p99_us": 6.88
+        },
+        "rho_75": {
+          "mean_us": 1.94,
+          "batch_p50_us": 1.98,
+          "p50_us": 0.79,
+          "p95_us": 5.62,
+          "p99_us": 5.83
+        },
+        "rho_100": {
+          "mean_us": 0.78,
+          "batch_p50_us": 0.78,
+          "p50_us": 0.75,
+          "p95_us": 0.83,
+          "p99_us": 1.0
+        }
+      }
+    },
+    "unscoped_full_graph": {
+      "36": {
+        "p50_us": 58.67,
+        "p99_us": 86.83,
+        "states_expanded": 89
+      },
+      "105": {
+        "p50_us": 63.83,
+        "p99_us": 107.5,
+        "states_expanded": 90
+      },
+      "500": {
+        "p50_us": 332.62,
+        "p99_us": 458.25,
+        "states_expanded": 426
+      },
+      "1599": {
+        "p50_us": 1121.04,
+        "p99_us": 2688.67,
+        "states_expanded": 1335
+      }
+    },
+    "multivariate_analytical_model": {
+      "calibrated_breaking_drifts_97d": 410,
+      "daily_estate_drift_rate": 4.23,
+      "per_table_daily_hazard": 0.00583,
+      "regimes": {
+        "Small_Prototype_7Tab_Fresh": {
+          "tables": 7,
+          "coupled_invariants_kq": 2,
+          "staleness_days": 0.0,
+          "predicted_silent_risk_pct": 3.57,
+          "hermesgov_certified_risk_pct": 0.0
+        },
+        "Mid_Department_36Tab_WeeklySync": {
+          "tables": 36,
+          "coupled_invariants_kq": 3,
+          "staleness_days": 7.0,
+          "predicted_silent_risk_pct": 19.75,
+          "hermesgov_certified_risk_pct": 0.0
+        },
+        "Core_Warehouse_105Tab_BiweeklyPrompt": {
+          "tables": 105,
+          "coupled_invariants_kq": 4,
+          "staleness_days": 14.0,
+          "predicted_silent_risk_pct": 35.7,
+          "hermesgov_certified_risk_pct": 0.0
+        },
+        "Full_Estate_1599Tab_StaticPrompt": {
+          "tables": 1599,
+          "coupled_invariants_kq": 5,
+          "staleness_days": 30.0,
+          "predicted_silent_risk_pct": 62.05,
+          "hermesgov_certified_risk_pct": 0.0
+        }
+      }
+    }
+  }
+}

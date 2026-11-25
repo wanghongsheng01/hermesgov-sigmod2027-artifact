@@ -3,7 +3,6 @@
   "results": [
     {
       "label": "GPT-6.2-Sol",
-      "origin": "International",
       "channel_model": "eos_sg/gpt-6.2-sol",
       "benchmark": "loctek",
       "direct_pass": 7,
@@ -258,7 +257,6 @@
     },
     {
       "label": "GPT-6.2-Sol",
-      "origin": "International",
       "channel_model": "eos_sg/gpt-6.2-sol",
       "benchmark": "tpcds",
       "direct_pass": 7,
@@ -513,7 +511,6 @@
     },
     {
       "label": "Claude-Opus-5.5",
-      "origin": "International",
       "channel_model": "eos_sg_claude/claude-opus-5-5",
       "benchmark": "loctek",
       "direct_pass": 8,
@@ -768,7 +765,6 @@
     },
     {
       "label": "Claude-Opus-5.5",
-      "origin": "International",
       "channel_model": "eos_sg_claude/claude-opus-5-5",
       "benchmark": "tpcds",
       "direct_pass": 8,
@@ -1023,7 +1019,6 @@
     },
     {
       "label": "Gemini-4-Argon",
-      "origin": "International",
       "channel_model": "eos_sg/gemini-4-argon",
       "benchmark": "loctek",
       "direct_pass": 7,
@@ -1278,7 +1273,6 @@
     },
     {
       "label": "Gemini-4-Argon",
-      "origin": "International",
       "channel_model": "eos_sg/gemini-4-argon",
       "benchmark": "tpcds",
       "direct_pass": 7,
@@ -1533,7 +1527,6 @@
     },
     {
       "label": "DeepSeek-V4-Pro",
-      "origin": "Domestic",
       "channel_model": "ark/deepseek-v4-pro-ga-260813",
       "benchmark": "loctek",
       "direct_pass": 3,
@@ -1788,7 +1781,6 @@
     },
     {
       "label": "DeepSeek-V4-Pro",
-      "origin": "Domestic",
       "channel_model": "ark/deepseek-v4-pro-ga-260813",
       "benchmark": "tpcds",
       "direct_pass": 4,
@@ -2043,7 +2035,6 @@
     },
     {
       "label": "Kimi-K3.1-Pro",
-      "origin": "Domestic",
       "channel_model": "ark/kimi-k3-1-pro-261024",
       "benchmark": "loctek",
       "direct_pass": 7,
@@ -2298,7 +2289,6 @@
     },
     {
       "label": "Kimi-K3.1-Pro",
-      "origin": "Domestic",
       "channel_model": "ark/kimi-k3-1-pro-261024",
       "benchmark": "tpcds",
       "direct_pass": 4,
@@ -2553,7 +2543,6 @@
     },
     {
       "label": "Qwen3.8-27B",
-      "origin": "Domestic",
       "channel_model": "loctek_qwen/Qwen3.8-27B",
       "benchmark": "loctek",
       "direct_pass": 2,
@@ -2808,7 +2797,6 @@
     },
     {
       "label": "Qwen3.8-27B",
-      "origin": "Domestic",
       "channel_model": "loctek_qwen/Qwen3.8-27B",
       "benchmark": "tpcds",
       "direct_pass": 0,

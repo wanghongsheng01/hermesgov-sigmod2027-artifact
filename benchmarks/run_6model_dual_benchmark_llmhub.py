@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""6-Model (3 International + 3 Domestic) Live Dual-Benchmark Caliber-Trap Study via llmhub.
+"""6-Model Live Dual-Benchmark Caliber-Trap Study via llmhub.
 
 Evaluates 6 frontier LLMs via the unified llmhub client (temperature=0):
-  International (3): GPT-6.2-Sol, Claude-Opus-5.5, Gemini-4-Argon
-  Domestic (3):      DeepSeek-V4-Pro, Kimi-K3.1-Pro, Qwen3.8-27B (on-premise)
+  Models (6): GPT-6.2-Sol, Claude-Opus-5.5, Gemini-4-Argon, DeepSeek-V4-Pro, Kimi-K3.1-Pro, Qwen3.8-27B
 Across TWO layered-warehouse benchmarks (12 traps each, 6 semantic failure classes x 2):
   1. Loctek Enterprise StarRocks Warehouse (digital_test 7-table slice)
   2. Authoritative Public TPC-DS Layered Star-Schema (OneData DWD/DIM/DWS/ADS 7-table slice)
@@ -91,12 +90,12 @@ TPCDS_CASES = [
 ]
 
 MODELS = [
-    {"label": "GPT-6.2-Sol",     "origin": "International", "channel": "eos_sg",        "model": "gpt-6.2-sol"},
-    {"label": "Claude-Opus-5.5", "origin": "International", "channel": "eos_sg_claude", "model": "claude-opus-5-5"},
-    {"label": "Gemini-4-Argon",  "origin": "International", "channel": "eos_sg",        "model": "gemini-4-argon"},
-    {"label": "DeepSeek-V4-Pro", "origin": "Domestic",      "channel": "ark",           "model": "deepseek-v4-pro-ga-260813"},
-    {"label": "Kimi-K3.1-Pro",   "origin": "Domestic",      "channel": "ark",           "model": "kimi-k3-1-pro-261024"},
-    {"label": "Qwen3.8-27B",     "origin": "Domestic",      "channel": "loctek_qwen",   "model": "Qwen3.8-27B"},
+    {"label": "GPT-6.2-Sol",     "channel": "eos_sg",        "model": "gpt-6.2-sol"},
+    {"label": "Claude-Opus-5.5", "channel": "eos_sg_claude", "model": "claude-opus-5-5"},
+    {"label": "Gemini-4-Argon",  "channel": "eos_sg",        "model": "gemini-4-argon"},
+    {"label": "DeepSeek-V4-Pro", "channel": "ark",           "model": "deepseek-v4-pro-ga-260813"},
+    {"label": "Kimi-K3.1-Pro",   "channel": "ark",           "model": "kimi-k3-1-pro-261024"},
+    {"label": "Qwen3.8-27B",     "channel": "loctek_qwen",   "model": "Qwen3.8-27B"},
 ]
 
 
