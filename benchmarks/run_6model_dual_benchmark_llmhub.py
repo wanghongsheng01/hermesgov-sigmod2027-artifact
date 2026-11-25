@@ -8,6 +8,7 @@ Across TWO layered-warehouse benchmarks (12 traps each, 6 semantic failure class
   2. Authoritative Public TPC-DS Layered Star-Schema (OneData DWD/DIM/DWS/ADS 7-table slice)
 """
 from __future__ import annotations
+from pathlib import Path
 import concurrent.futures, json, os, re, sys, time
 from llmhub.client import LLMHub
 
@@ -267,7 +268,7 @@ def main():
             tasks.append(ex.submit(run_model_bench, hub, m, "tpcds",  TPCDS_DDL,  TPCDS_GLOSS,  TPCDS_CASES))
         results = [f.result() for f in tasks]
 
-    out_path = "/Users/loctek/.gemini/antigravity/scratch/zju-ccfa-phd/submission_SIGMOD2027_Industrial/experiments_6model_dual_benchmark.json"
+    out_path = str(Path(__file__).resolve().parents[1] / "results" / "experiments_6model_dual_benchmark.json")
     with open(out_path, "w") as f:
         json.dump({"timestamp": time.strftime("%Y-%m-%d %H:%M:%S CST"), "results": results}, f, indent=2, ensure_ascii=False)
     print("\nSaved audited 6-model dual-benchmark results to:", out_path)

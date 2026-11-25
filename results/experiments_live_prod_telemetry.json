@@ -1,0 +1,198 @@
+{
+  "collected_at": "2026-11-24 17:07:09 CST",
+  "en1_ip": "172.18.219.239",
+  "gov_mysql_exact_counts": {
+    "asset_table_snapshot": 4178,
+    "atomic_metric_pilot_config": 1,
+    "atomic_metric_pilot_execution_log": 16,
+    "ds_sql_snapshot": 102,
+    "global_lineage_snapshot": 3,
+    "hqr_metric_runs": 22,
+    "hqr_semantic_asset_overrides": 15,
+    "hqr_semantic_runs": 1,
+    "hqr_semantic_snapshots": 6,
+    "hqr_warehouse_mcp_sql_audits": 164,
+    "metric_pilot_derived_test": 48,
+    "metric_pilot_execution_log_test": 170,
+    "metric_pilot_field_lineage_test": 39,
+    "metric_pilot_metric_test": 34,
+    "metric_pilot_relation_test": 9,
+    "metric_pilot_scope_test": 1,
+    "reconcile_item": 646,
+    "reconcile_run": 183,
+    "semantic_asset": 513,
+    "semantic_asset_dictionary_rev2316_deletions_backup_20261111": 20,
+    "semantic_asset_import_batch": 3,
+    "semantic_asset_import_item": 3,
+    "semantic_asset_rev2481_publish_backup_20261111": 11,
+    "semantic_asset_rev2522_publish_backup_20261111": 10,
+    "semantic_asset_rev2544_sku_avg_price_backup_20261112": 2,
+    "semantic_asset_rev2560_full_dictionary_backup_20261112": 108,
+    "semantic_asset_rev2560_sku_avg_price_backup_20261112": 5,
+    "semantic_asset_rev2562_full_dictionary_backup_20261112": 106,
+    "semantic_asset_rev2583_four_metrics_backup_20261112": 7,
+    "semantic_asset_rev2584_c027_backup_20261112": 2,
+    "semantic_asset_trade_dws_retirement_backup_20261111": 114,
+    "semantic_asset_trial_case": 4,
+    "semantic_asset_verification": 3387,
+    "semantic_entity_field": 92,
+    "semantic_entity_field_amoeba_category_backup_20261111": 3,
+    "semantic_entity_field_brand_refresh_backup_20261111": 1,
+    "semantic_entity_field_category_std_backup_20261110": 3,
+    "semantic_entity_field_category_std_backup_20261111": 3,
+    "semantic_entity_field_country_std_backup_20261111": 1,
+    "semantic_entity_field_test": 11,
+    "semantic_entity_field_trade_refresh_backup_20261111": 7,
+    "semantic_entity_value": 86978
+  },
+  "gov_breakdowns": {
+    "snapshot_date_span": [
+      [
+        "2026-08-19 07:33:56",
+        "2026-11-24 01:06:04",
+        "30409"
+      ]
+    ]
+  },
+  "redis_db3": {
+    "keys": [
+      "governance:semantic:v2:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:version",
+      "governance:semantic:v5:{2b89e99408149ee04945d61b2ccc9a44d4e91f4eff159bb2668dde471be56a3d}:version",
+      "governance:semantic:v4:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:generation",
+      "governance:semantic:v5:{2b89e99408149ee04945d61b2ccc9a44d4e91f4eff159bb2668dde471be56a3d}:generation",
+      "governance:semantic:v5:{2b89e99408149ee04945d61b2ccc9a44d4e91f4eff159bb2668dde471be56a3d}:summary",
+      "governance:semantic:v3:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:generation",
+      "governance:semantic:v2:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:summary",
+      "governance:semantic:v4:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}",
+      "governance:semantic_snapshot:v1:version",
+      "governance:semantic:v5:{bc31cc695f439fd405c6446aadb36171c7b27d060e4d750ece89513ce86b7f12}:summary",
+      "governance:semantic:v4:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}",
+      "governance:semantic:v4:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:summary",
+      "governance:semantic:v4:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:version",
+      "governance:semantic:v5:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:generation",
+      "governance:semantic:v2:{2b89e99408149ee04945d61b2ccc9a44d4e91f4eff159bb2668dde471be56a3d}:generation",
+      "governance:semantic:v2:{bc31cc695f439fd405c6446aadb36171c7b27d060e4d750ece89513ce86b7f12}:generation",
+      "governance:semantic:v4:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:version",
+      "governance:semantic:v5:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:summary",
+      "governance:semantic:v3:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:version",
+      "governance:semantic:v3:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:version",
+      "governance:semantic:v2:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:version",
+      "governance:semantic:v4:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:generation",
+      "governance:semantic:v5:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:generation",
+      "governance:semantic:v3:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}",
+      "governance:semantic:v2:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:summary",
+      "governance:semantic:v5:{bc31cc695f439fd405c6446aadb36171c7b27d060e4d750ece89513ce86b7f12}:generation",
+      "governance:semantic:v2:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}",
+      "governance:semantic:v3:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}",
+      "governance:semantic:v5:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}",
+      "governance:semantic:v3:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:summary",
+      "governance:semantic:v5:{bc31cc695f439fd405c6446aadb36171c7b27d060e4d750ece89513ce86b7f12}:version",
+      "governance:semantic:v5:{2b89e99408149ee04945d61b2ccc9a44d4e91f4eff159bb2668dde471be56a3d}",
+      "governance:semantic:v4:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:summary",
+      "governance:semantic:v5:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:version",
+      "governance:semantic:v2:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:generation",
+      "governance:semantic:v2:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:generation",
+      "governance:semantic:v5:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:summary",
+      "governance:semantic:v3:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:summary",
+      "governance:semantic:v3:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}:generation",
+      "governance:semantic:v5:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}:version",
+      "governance:semantic_snapshot:v1",
+      "governance:semantic:v5:{a832615e5d5e24dcefd460090f36ca2496da9bc6d67f7933f701c479ad9335af}",
+      "governance:semantic:v2:{f007aaca109498fb4dd68260662136e5aa971af47b276eb42dbb0a7333dad970}",
+      "governance:semantic:v5:{bc31cc695f439fd405c6446aadb36171c7b27d060e4d750ece89513ce86b7f12}"
+    ],
+    "strlen": ":64",
+    "get_p50_ms": 55.16
+  },
+  "starrocks_live": {
+    "schemas": [
+      {
+        "schema": "erp_prod",
+        "tables": 601
+      },
+      {
+        "schema": "erp_ods",
+        "tables": 481
+      },
+      {
+        "schema": "erp_dev",
+        "tables": 192
+      },
+      {
+        "schema": "wb_test",
+        "tables": 149
+      },
+      {
+        "schema": "export_sales_db",
+        "tables": 98
+      },
+      {
+        "schema": "amz_ops_db",
+        "tables": 42
+      },
+      {
+        "schema": "test",
+        "tables": 26
+      },
+      {
+        "schema": "erp_reports",
+        "tables": 5
+      },
+      {
+        "schema": "datahub_gov",
+        "tables": 5
+      }
+    ],
+    "total_tables": 1599
+  },
+  "starrocks_prefixes": [
+    [
+      "ods",
+      "1157"
+    ],
+    [
+      "dim",
+      "109"
+    ],
+    [
+      "ads",
+      "90"
+    ],
+    [
+      "odsh",
+      "78"
+    ],
+    [
+      "dws",
+      "48"
+    ],
+    [
+      "dwd",
+      "45"
+    ],
+    [
+      "br",
+      "38"
+    ],
+    [
+      "map",
+      "9"
+    ],
+    [
+      "acl",
+      "6"
+    ],
+    [
+      "dh",
+      "5"
+    ],
+    [
+      "etl",
+      "4"
+    ],
+    [
+      "sorftime",
+      "2"
+    ]
+  ]
+}

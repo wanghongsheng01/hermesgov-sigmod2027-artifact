@@ -13,6 +13,7 @@ Seed: 42 (100% deterministic & reproducible).
 """
 
 from __future__ import annotations
+from pathlib import Path
 from collections import defaultdict, deque
 import hashlib
 import json
@@ -564,7 +565,7 @@ def run_estate_scale_benchmark(n_iters: int = 1000, seed: int = 42) -> dict:
 
 
 def main():
-    base = "/Users/loctek/.gemini/antigravity/scratch/zju-ccfa-phd/submission_SIGMOD2027_Industrial"
+    base = str(Path(__file__).resolve().parents[1] / "results")
     t_start = time.time()
     rqg_stats = run_property_based_model_checker(n_trials=10000, seed=42)
     scale_stats = run_estate_scale_benchmark(n_iters=1000, seed=42)
@@ -576,7 +577,7 @@ def main():
         "property_based_formal_verification_10k": rqg_stats,
         "estate_scale_and_hit_ratio_sweep": scale_stats,
     }
-    out_path = os.path.join(base, "experiments_stage2_formal_scale.json")
+    out_path = os.path.join(base, "reproduced_stage2_formal_scale.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 

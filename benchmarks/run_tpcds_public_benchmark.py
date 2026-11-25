@@ -8,6 +8,7 @@ rate marts = 36 tables) and runs the EXACT HermesGov deterministic planner, boun
 100% public schema, 100% reproducible without private enterprise access.
 """
 from __future__ import annotations
+from pathlib import Path
 import json, os, random, statistics, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -237,7 +238,7 @@ def main():
             "p95_us": round(sg_ts[int(len(sg_ts)*0.95)], 2),
         }
     }
-    out_p = "/Users/loctek/.gemini/antigravity/scratch/zju-ccfa-phd/submission_SIGMOD2027_Industrial/experiments_tpcds_public_microbench.json"
+    out_p = str(Path(__file__).resolve().parents[1] / "results" / "reproduced_tpcds_public_microbench.json")
     with open(out_p, "w") as f:
         json.dump(out, f, indent=2)
     print(json.dumps(out, indent=2)[:1800])
