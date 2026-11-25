@@ -1,4 +1,4 @@
-# HermesGov — ACM SIGMOD 2027 Industrial Track Artifact (v2.0)
+# HermesGov — ACM SIGMOD 2027 Industrial Track Artifact (v4.0)
 
 **Paper**: *HermesGov: A Governed Multi-Path Semantic Query Engine and MCP Runtime for Enterprise Layered Data Warehouses*  
 **Authors**: Hongsheng Wang (Zhejiang University & Loctek Ergonomic Technology Corp.) and Dazhen Deng (Zhejiang University)
